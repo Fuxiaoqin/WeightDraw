@@ -1,0 +1,391 @@
+/*reset*/
+html,body{vertical-align: baseline;font-weight: inherit; font-family:"微软雅黑"; font-style: inherit;font-size: 100%;outline: 0;padding: 0;margin: 0;border: 0;}
+div,p,span,form,iframe,table,td,th,input,textarea,button,label,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6 {margin: 0;padding: 0;}
+h1,h2,h3,h4,h5,h6 {font-size: 100%;font-weight: normal;}
+ul,ol,li,dl {list-style-type: none;}
+em,i,dfn,cite,strong,small {font-style: normal;}
+fieldset,button,input,select,option {vertical-align: middle;font: 12px/18px "", arial, sans-serif;}
+table {border-collapse: collapse;border-spacing: 0;}
+img {border: 0;}
+textarea {resize: none;}
+label {cursor: pointer;}
+/*color*/
+a {text-decoration: none;   }
+a:hover {text-decoration: none;}
+a img, :link img, :visited img {border:0px;} 
+a,img,button,input,textarea,div{-webkit-tap-highlight-color:rgba(255,255,255,0);}
+
+/*global*/
+body{
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: top;
+    /*height: 46.666666rem;*/
+    width: 20rem;
+    min-width: 100%;
+    /*min-width: 300px;*/
+}
+/*.index_warp{
+    height:90%;
+}*/
+.title_box{
+    background-image: url('../images/draw_title.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    height: 12rem;
+    width: 20rem;
+    min-width: 100%;
+}
+.draw_people{
+    position: absolute;
+    right: 0;
+    top: 8px;
+    background-color: #FFFFFF;
+    border-top: 2px solid #17b3ca;
+    border-bottom: 2px solid #17b3ca;
+    border-left: 2px solid #17b3ca;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.draw_people p{
+    font-size: 10px;
+} 
+.sign_box{
+    width: 19.1rem;
+    height: 8.5rem;
+    margin: 0 auto;
+    position: relative;
+    background-image: url('../images/draw_signbox1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.sign_btn img{
+    width: 3.067rem;
+    height: 0.96rem;
+    position: absolute;
+    top:2.75rem;
+    left: calc(50% - 1.5rem);
+    cursor: pointer;
+}
+.rate_box{
+    width: 16rem;
+    height: 1.09rem;
+    position: absolute;
+    top:3.6rem;
+    left: calc(50% - 8rem);
+    cursor: pointer;
+    text-align: center;
+}
+.rate_box p {
+    font-size: 0.32rem;
+    margin-top: 5px;
+}
+.rate_line{
+    width: 100%
+} 
+.rate_num{
+    color: #f26262;
+    font-size: 0.373rem;
+}
+.roll_box{
+    height: 16rem;
+    position: relative;
+    background-image: url('../images/roll_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+#go_roll{
+    width: 3.47rem;
+    height: 4.32rem;
+    position: absolute;
+    left: calc(50% - 1.7rem);
+    top: 5.4rem;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+}
+.rule{
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    font-size: .62rem;
+    color: #FFFFFF;
+    background-color: rgba(51,51,51,1);
+    border-radius: 5px;
+    padding: .15rem .6rem;
+    cursor: pointer;
+}
+.roll_shadow{
+    width: 7.8rem;
+    height: 1.39rem;
+    position: absolute;
+    left: calc(50% - 3.8rem);
+    top: 14rem;
+    z-index: -1;
+    background-image: url('../images/roll_shadow.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.roll_reward{
+    width: 11.47rem;
+    height: 11.47rem;
+    position: absolute;
+    left: calc(50% - 5.73rem);
+    top: 2rem;
+    z-index: 2;
+    background-image: url('../images/roll_center.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    transition: transform 12s;
+    transition-timing-function: ease;
+    -moz-transition-timing-function: ease; /* Firefox 4 */
+    -webkit-transition-timing-function: ease; /* Safari 和 Chrome */
+}
+.roll_ring{
+    width: 13.36rem;
+    height: 13.36em;
+    position: absolute;
+    left: calc(50% - 6.7rem);
+    top: 1.1rem;
+    z-index: 1;
+    background-image: url('../images/roll_ring.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    animation:slowroll 30s infinite linear;
+}
+.roll_point{
+    width: 3.47rem;
+    height: 4.32rem;
+    position: absolute;
+    left: calc(50% - 1.7rem);
+    top: 5.4rem;
+    z-index: 5;
+    background-image: url('../images/roll_point.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.reward_list_box{
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    background-color: #FFF;
+    border-radius: 7px;
+    padding: 1.3rem 0 .8rem 0;
+    top: .5rem;
+}
+.reward_list_box img.zwardImg{
+    display: block;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -25%;
+    top: -1.4rem;
+}
+
+.reward_list{
+    width: 100%;
+    overflow: hidden;
+}
+.reward_list li{
+    width: calc(100%-1.5rem);
+    /*display: flex;*/
+    justify-content: flex-end;
+    padding-left: 2rem;
+    position:relative;
+    top:0;
+    overflow:hidden;
+}
+.reward_list li p{
+    font-size: .7rem;
+    /*display: block;*/
+    /*flex-grow: 1;*/
+    width:5.9rem;
+    text-align: left;
+    float:left;         
+}
+.reward_list_box .reward_list li p:nth-child(2){
+    width:4rem;
+    /*text-align: center;*/
+}
+p.copyright{
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+    font-size: .7rem;
+    position: absolute;
+    bottom: -2rem;
+}
+
+.frame{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 46.666666rem;
+    width: 20rem;
+    background-color: rgba(0,0,0,0.8);
+}
+.rule_frame{
+    display: none;
+    height: 15.57rem;
+    width: 14.35rem;
+    position: fixed;
+    z-index: 101;
+    top: 10rem;
+    left: calc(50% - 7.1725rem);
+    background-image: url('../images/rule_main.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.close_btn{
+    height: 1.1rem;
+    width: 1.1rem;
+    top: .6rem;
+    right: .6rem;
+    position: absolute;
+    background-image: url('../images/close.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+}
+.rule_frame .close_btn{
+    top:1.9rem;
+}
+.drawtime{
+    color: #ea8505;
+}
+
+.child_frame{
+    display: none;
+    height: 15.57rem;
+    width: 11.8rem;
+    position: fixed;
+    z-index: 101;
+    top: 9rem;
+    left: calc(50% - 5.9rem);
+    
+}
+.cannot_frame{
+    background-image: url('../images/cannot_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.cannot_frame p:nth-child(2){
+    text-align: center;
+    margin: 6.5rem 0 0 0;
+    font-size: 1.28rem
+}
+.cannot_frame p:nth-child(3){
+    text-align: center;
+    margin: .25rem 0 0 0;
+    font-size: .62rem;
+    color: #898989;
+}
+.cannot_frame span{
+    color:orange;
+}
+.can_frame{
+    background-image: url('../images/congr.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center; 
+    width:14.8rem;
+    left:calc(50% - 6.9rem);
+}
+.can_frame .close_btn{
+    right: 6.7rem;
+    top:-1rem;
+}
+
+.cannot_backbtn{
+    height: 2rem;
+    width: 7.28rem;
+    margin: 1.2rem auto 0 auto;
+    background-image: url('../images/conffimBtn.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.can_frame .cannot_backbtn{
+    margin: 6.2rem auto 0 auto;
+    width:6.28rem;
+}
+.can_frame.child_frame p{
+    text-align: center;
+    font-size: 0.6rem;
+    margin-top: 3.5rem;
+}
+.can_frame.child_frame p:nth-child(2){
+    color:orange;
+}
+.can_frame.child_frame p:nth-child(3){
+    margin-top: 0rem;
+}
+.can_frame .awardImg img{
+    width: 3rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.5rem;
+    margin-top: .5rem;
+}
+
+/*animate*/
+@keyframes slowroll {
+0% {
+    transform:rotate(0deg);
+ }
+ 100% {
+    transform:rotate(-360deg);
+ }
+}
+@keyframes quickroll {
+0% {
+    transform:rotate(0deg);
+ }
+ 100% {
+    transform:rotate(-2160deg);
+ }
+}
+.page_1_foot{
+    width: 100%;
+    /* border-radius: 5px; */
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+     color: #fff; 
+    text-align: center;
+    background: #4ebdcd;
+    position: fixed;
+    bottom: -8px;
+    z-index: 100; 
+    display:none; 
+}
+.d_foot{
+    display:none;
+}
+.thanksP{
+    background-image:url("../images/thanksP.png");;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.thanksP .close_btn{
+    top:1.6rem;
+} 
+.thanksP .cannot_backbtn{
+    margin-top:9.2rem;
+}  

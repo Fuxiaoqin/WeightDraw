@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" style="height: auto; overflow: auto; min-height:100%;">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,  minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta http-equiv="x-rim-auto-match" content="none" />
+    <meta itemprop="name" content="" id="qqShareContent">
+    <meta itemprop="description" content="" id="qqShareDes">
+    <meta itemprop="image" content="" id="qqShareImg">
+    <title>天天称重抽大奖</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+</head>
+<body>
+    <div class="index_warp">
+        <div class="title_box">
+            <div class="draw_people">
+                <p><span class="peopleCount">10000</span>人参与</p>
+            </div>
+        </div>
+        <div class="sign_box">
+            <div class="rate_box">
+                <img src="images/draw_0.png" alt="签到进度" class="rate_line noday">
+            </div>
+        </div>
+        <div class="roll_box">
+            <div class="rule"><p>活动规则</p></div>
+            <div class="roll_mian">
+                <div class="roll_reward"></div>
+                <div class="roll_ring"></div>
+                <div class="roll_point"></div>
+                <button id="go_roll" class="cannot"></button>
+            </div>
+            <div class="roll_shadow"></div>
+        </div>
+        <div class="reward_list_box">
+            <img class="zwardImg" src="images/new_03.png" alt="">
+            <ul class="reward_list"></ul>
+            <p class="copyright">活动最终解释权归好享瘦APP所有 本活动与苹果公司无关</p>
+        </div> 
+    </div>
+    <div class="common_tip"></div>
+    <div class="d_foot" >
+        <span class="colse"></span>
+        <div class="d_foot_bg"></div>
+        <div class="d_foot_main">
+            <div class="left"></div>
+            <div class="text">好享瘦,专业瘦</div>
+            <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.kufeng.hj.enjoy">下载APP</a>
+        </div>
+    </div>
+
+    <!--蒙版-->
+    <div class="frame">
+        <!--规则弹窗-->
+        <div class="rule_frame child_frame"><div class="close_btn"></div></div>
+        <!--未抽中奖弹窗-->
+        <div class="cannot_frame child_frame">
+            <div class="close_btn"></div>
+            <p>很可惜没中奖</p>
+            <p>您还有次<span > 1 </span>次中奖机会！</p>
+            <div class="cannot_backbtn"></div>
+        </div>
+        <!--谢谢参与弹窗-->
+        <div class="thanksP child_frame">
+            <div class="close_btn"></div>
+            <div class="cannot_backbtn";></div>
+        </div>
+        <!-- 抽中弹窗 -->
+        <div class="can_frame child_frame">
+            <div class="close_btn"></div>
+            <p>获得一个迪士尼保温杯</p>
+            <p>我们会尽快联系您确认邮寄信息</p>
+            <div class="awardImg"><img src="" alt=""></div>
+            <div class="cannot_backbtn"></div>
+        </div>
+    </div>
+    <div class="page_1_foot">活动已结束了</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/commonJs.js"></script>
+<script src="js/jweixin-1.0.0.js"></script>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+</html>
