@@ -8,3 +8,7 @@ H5,css3,javascript实现转盘抽奖
 ## 联系方式
 
 - `Email`：xiaoqinfu@sina.com
+
+# demo展示
+[demo展示](http://htmlpreview.github.com/?https://github.com/Fuxiaoqin/WeightDraw/blob/master/index.html)
+
