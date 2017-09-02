@@ -1,27 +1,27 @@
 ;
 //判断是否测试环境
-var _HOST = '';
-var _ACTHOST = '';
-var _SHOST=''; //分享链接头部
-var _ACTSHOST = 'http://act.hxsapp.com'; //固定http
-if (window.location.href.indexOf('121.41.83.91') !== -1) {
-    _HOST = 'http://121.41.83.91';
-    _ACTHOST = 'http://121.41.83.91';
-    _SHOST = 'http://app.hxsapp.com';
-}else{
-    //2.8版本 客户端随身听所需音频信息
-    moreMyUserAgent(function(Version){
-      if(Version >= 2.8 && Version){
-        _HOST = 'https://app.hxsapp.com';
-        _ACTHOST = 'https://act.hxsapp.com';
-        _SHOST = 'https://app.hxsapp.com';
-      }else{
-        _HOST = 'https://app.hxsapp.com';
-        _ACTHOST = 'https://act.hxsapp.com';
-        _SHOST = 'https://app.hxsapp.com';
-      }
-    });
-}
+var _HOST = 'https://app.hxsapp.com';
+var _ACTHOST = 'https://act.hxsapp.com';
+var _SHOST='https://app.hxsapp.com'; //分享链接头部
+var _ACTSHOST = 'https://act.hxsapp.com'; //固定http
+// if (window.location.href.indexOf('121.41.83.91') !== -1) {
+//     _HOST = 'http://121.41.83.91';
+//     _ACTHOST = 'http://121.41.83.91';
+//     _SHOST = 'http://app.hxsapp.com';
+// }else{
+//     //2.8版本 客户端随身听所需音频信息
+//     moreMyUserAgent(function(Version){
+//       if(Version >= 2.8 && Version){
+//         _HOST = 'https://app.hxsapp.com';
+//         _ACTHOST = 'https://act.hxsapp.com';
+//         _SHOST = 'https://app.hxsapp.com';
+//       }else{
+//         _HOST = 'https://app.hxsapp.com';
+//         _ACTHOST = 'https://act.hxsapp.com';
+//         _SHOST = 'https://app.hxsapp.com';
+//       }
+//     });
+// }
 
 var modelIdfa = $_GET('model_idfa');
 var CallBack = '?callback=?' + '&model_idfa=' + modelIdfa;
