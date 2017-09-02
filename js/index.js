@@ -307,6 +307,7 @@ window.onload=function(){
     if($_GET('weightLotteryInApp') == 1){
         $('.d_foot').css('display','block'); 
     }
+    console.log(_ACTSHOST);
     weightDraw.getActData();
     weightDraw.getVisitCount();
     weightDraw.checkSign(); 
