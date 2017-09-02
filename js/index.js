@@ -1,26 +1,4 @@
-//判断是否测试环境
-var _HOST = '';
-var _ACTHOST = '';
-var _SHOST = ''; //分享链接头部
-var _ACTSHOST = 'http://act.hxsapp.com'; //固定http
-if ( window.location.href.indexOf('121.41.83.91') !== -1 ) {
-    _HOST = 'http://121.41.83.91';
-    _ACTHOST = 'http://121.41.83.91';
-    _SHOST = 'http://app.hxsapp.com';
-}else{
-    //2.8版本 客户端随身听所需音频信息
-    moreMyUserAgent( function(Version) {
-        if(Version >= 2.8 && Version){
-            _HOST = 'https://app.hxsapp.com';
-            _ACTHOST = 'https://act.hxsapp.com';
-            _SHOST = 'https://app.hxsapp.com';
-        }else{
-            _HOST = 'http://app.hxsapp.com';
-            _ACTHOST = 'http://act.hxsapp.com';
-            _SHOST = 'http://app.hxsapp.com';
-        }
-    });
-}
+
 var token = {sess_token:$_GET('sess_token')} 
 var weightDraw = {
     signTime:0,//签到次数
