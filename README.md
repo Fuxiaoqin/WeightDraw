@@ -1,5 +1,5 @@
 ﻿# [Demo展示]
-![images](https://github.com/Fuxiaoqin/WeightDraw/blob/master/images/weight2.jpg?raw=true)
+[![images]](https://github.com/Fuxiaoqin/WeightDraw/blob/master/images/weight2.jpg?raw=true)
 [images]:https://fuxiaoqin.github.io/WeightDraw/index.html "双击图片展示Demo"
 
 ## 开发
