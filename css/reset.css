@@ -49,7 +49,7 @@ input::-webkit-inner-spin-button{
 .d_foot .colse{
   width: 13px;
   height: 13px;
-  background: url(../images/img/colse.png) left top no-repeat;
+  background: url('https://raw.githubusercontent.com/Fuxiaoqin/Assets/master/img/img/colse.png') left top no-repeat;
   background-size: 100%;
   position: absolute;
   right: 7px;
@@ -75,7 +75,7 @@ input::-webkit-inner-spin-button{
 .d_foot .left{
   width: 41px;
   height: 41px;
-  background:url(../images/img/foot-logo.png) left top no-repeat;
+  background:url('https://raw.githubusercontent.com/Fuxiaoqin/Assets/master/img/img/foot-logo.png') left top no-repeat;
   background-size: 100%;
   float:left;
   margin-right: 7px;
@@ -142,7 +142,7 @@ input::-webkit-inner-spin-button{
 .stressing span{
   width: 100px;
   height: 120px;
-  background: url(../images/img/zx-loading.gif) left top no-repeat;
+  background: url('https://raw.githubusercontent.com/Fuxiaoqin/Assets/master/img/img/zx-loading.gif') left top no-repeat;
   background-size: 100px;
   position: absolute;
   left: 50%;
