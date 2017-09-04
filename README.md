@@ -5,7 +5,7 @@ H5,css3,javascript实现转盘抽奖
 
 拉取本项目代码，在dev分支下提交您的code，审阅通过之后会合并到master分支，就是这么简单
 
-![images](WeightDraw/images/weigt.jpg)
+![images](https://github.com/Fuxiaoqin/WeightDraw/blob/master/images/weigt.jpg?raw=true)
 
 ## 联系方式
 
