@@ -1,9 +1,7 @@
 ﻿# [WeightDraw](https://fuxiaoqin.github.io/WeightDraw/index.html)
 H5,css3,javascript实现转盘抽奖
 
-# demo展示
-[demo展示](https://fuxiaoqin.github.io/WeightDraw/index.html)
-
+# [Demo展示](https://fuxiaoqin.github.io/WeightDraw/index.html)
 ![images](https://github.com/Fuxiaoqin/WeightDraw/blob/master/images/weight2.jpg?raw=true)
 
 ## 开发
