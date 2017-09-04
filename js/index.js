@@ -145,12 +145,37 @@ var weightDraw = {
             weightDraw.judgeState();
         });
     },
+    // //概率
+    // //生产环境不需要前端计算概率
+    prizeRand:function() {
+        var rand = parseInt( Math.floor(Math.random() * (100-1) + 1) );
+        if (rand < 10){
+            return 1;
+        }
+        else if ( rand < 20 ){
+            return 2;
+        }
+        else if ( rand < 30 ) {
+            return 4;
+        }
+        else if ( rand < 40 ) {
+            return 5;
+        }
+        else if ( rand < 50 ) {
+            return 6;
+        }
+        else {
+            return 3;
+        }
+    },
     //判断返回码状态
     judgeState:function(){
         var actId={act_id:$_GET('id'),sess_token:$_GET('sess_token')};
-        // var actId={act_id:62};//测试用
+        var actId={act_id:62};//测试用
         $.getJSON(_ACTSHOST + '/weightDraw/Draw/turn?callback=?', actId, function(data){
             // data.code= 606 ;//测试用
+            data.code = 200;
+            data.award_id = weightDraw.prizeRand();
             switch( Number( data.code ) ){
                 case 401://未登录跳转登录页面
                 window.location.href='https://hxsapp_showloginpage';
@@ -307,7 +332,6 @@ window.onload=function(){
     if($_GET('weightLotteryInApp') == 1){
         $('.d_foot').css('display','block'); 
     }
-    console.log(_ACTSHOST);
     weightDraw.getActData();
     weightDraw.getVisitCount();
     weightDraw.checkSign(); 
