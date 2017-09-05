@@ -15,6 +15,7 @@ var weightDraw = {
     checkSign:function(){
         $.getJSON(_ACTSHOST+'/weightDraw/Sign/conTimes?callback=?',token, function(data){
             weightDraw.signTime = data.code == 200 || data.code == 201 ? data.sign_times : data.sign_times > 3 ? 3 : 0;
+            weightDraw.signTime = 3;
             $('.rate_line').attr('src','images/draw_' + weightDraw.signTime + '.png');  
         });    
     },
@@ -31,7 +32,7 @@ var weightDraw = {
         $.getJSON(_ACTSHOST+'/weightDraw/Draw/actInfo?callback=?',act_id,function(data){
             //H5通知客户端显示分享按钮
             if(data.code!=200){
-                toast2(data.msg);
+                // toast2(data.msg);
                 return;
             }
             if(data.data.state!=1){return;}
