@@ -1,4 +1,4 @@
-﻿# [Demo展示](https://fuxiaoqin.github.io/WeightDraw/index.html)
+﻿# [Demo展示[点我演示]](https://fuxiaoqin.github.io/WeightDraw/index.html)
  
 [![image](https://github.com/Fuxiaoqin/WeightDraw/blob/master/images/weight2.jpg?raw=true)](https://fuxiaoqin.github.io/WeightDraw/index.html)
 
@@ -7,6 +7,3 @@
 
 ## 联系方式
 - `Email`：xiaoqinfu@sina.com
-
-
-
