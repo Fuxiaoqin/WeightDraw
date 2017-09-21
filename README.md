@@ -4,7 +4,13 @@
 [![image](https://github.com/Fuxiaoqin/WeightDraw/blob/master/images/weight2.jpg?raw=true "点我演示效果")](https://fuxiaoqin.github.io/WeightDraw/index.html)
 
 ## 开发说明：
-### 一、本demo各功能
+### 一、本demo使用技术栈
+    H5：支持移动端、PC端
+    css：使用css3高级动画，animate.css框架动画
+    Javascript：ES5语法
+    jQuery: 选择器、循环API
+   
+### 二、本demo各功能
     1.支持移动端、pc端
     2.支持一次分享、二次分享
     3.支持中奖名单轮播
@@ -12,7 +18,7 @@
     5.支持PV人数展示
     6.如若想编辑本demo代码，拉取code，在dev分支下提交您的code，我会合并至master
 
-### 二、开发流程
+### 三、开发流程
 #### 参数说明：
     signTime: 0,//签到次数
     timer: 0,//中奖名单轮播计数器
